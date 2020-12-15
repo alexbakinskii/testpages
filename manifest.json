@@ -112,7 +112,13 @@
             "src": "img/32x32.png",
             "sizes": "32x32",
             "type": "image/png"
-        }
+        },
+        {
+            "src": "img/maskable_icon.png",
+            "sizes": "196x196",
+            "type": "image/png",
+            "purpose": "any maskable"
+          }
     ],
     "url": "https://alexbakinskii.github.io/testpages/",
     "screenshots": []
