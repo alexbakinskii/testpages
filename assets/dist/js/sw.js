@@ -3,15 +3,14 @@ const staticCacheName = 'static-cache-v0';
 const dynamicCacheName = 'dynamic-cache-v0';
 
 const staticAssets = [
-    './',
-    './index.html',
-    './images/icons/icon-128x128.png',
-    './images/icons/icon-192x192.png',
-    './offline.html',
-    './css/main.css',
-    './js/app.js',
-    './js/main.js',
-    './images/no-image.jpg'
+    '/',
+    'index.html',
+    'img/128x128.png',
+    'img/192x192.png',
+    'offline.html',
+    'assets/dist/css/bootstrap.min.css',
+    'assets/dist/js/app.js',
+    'img/no-image.jpg'
 ];
 
 self.addEventListener('install', async event => {
@@ -52,9 +51,9 @@ async function checkOnline(req) {
         if (cachedRes) {
             return cachedRes;
         } else if (req.url.indexOf('.html') !== -1) {
-            return caches.match('./offline.html');
+            return caches.match('offline.html');
         } else {
-            return caches.match('./images/no-image.jpg');
+            return caches.match('img/no-image.jpg');
         }
     }
 }
