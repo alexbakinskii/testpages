@@ -6,7 +6,7 @@
     "scope": "/testpages/",
     "display": "standalone",
     "start_url": "https://alexbakinskii.github.io/testpages/",
-    "background_color": "#000000",
+    "background_color": "#948b6e",
     "theme_color": "transparent",
     "description": "Description of my Cover app",
     "orientation": "portrait",
